@@ -403,11 +403,9 @@ input[disabled], button[disabled] {
 // i.e. only those rooms that are created on this page
 var publicRoomIdentifier = 'dashboard';
 var connection = new RTCMultiConnection();
-connection.session = {
-        data: true
- };
-//connection.socketURL = '/';
- connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+
+connection.socketURL = '/';
+ //connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
 //connection.socketURL = 'https://damp-taiga-83128.herokuapp.com:443/';
 /// make this room public
 connection.publicRoomIdentifier = publicRoomIdentifier;
